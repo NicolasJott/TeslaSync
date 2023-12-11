@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import TeslaSwift
 
 @main
 struct teslasyncApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @StateObject var userStateViewModel = UserStateViewModel()
+
+        var body: some Scene {
+            WindowGroup {
+                NavigationView{
+                    ContentView()
+                }
+                .navigationViewStyle(.stack)
+                .environmentObject(userStateViewModel)
+            }
         }
-    }
 }

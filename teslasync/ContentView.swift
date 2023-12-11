@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    @EnvironmentObject var vm: UserStateViewModel
+        
+        var body: some View {
+            if (vm.isAuthenticated) {
+                HomeScreen()
+            } else {
+                TeslaWebLogin()
+            }
         }
-        .padding()
-    }
 }
 
-#Preview {
-    ContentView()
-}
