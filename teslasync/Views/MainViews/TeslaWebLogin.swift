@@ -20,6 +20,7 @@ struct TeslaWebLogin: UIViewControllerRepresentable {
                      _ = try await result()
                     print("Authentication success")
                     guard vm.api.isAuthenticated else { return }
+                    UserDefaults.standard.set(vm.api.token?.jsonString, forKey: "tesla.token")
                     vm.isAuthenticated = vm.api.isAuthenticated
                 } catch let error {
                     print("Error", error)

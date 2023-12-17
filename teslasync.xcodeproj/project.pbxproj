@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		3676B7502B2659BC00FEC208 /* UserStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B74F2B2659BC00FEC208 /* UserStateViewModel.swift */; };
 		3676B7542B265A2200FEC208 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B7532B265A2200FEC208 /* HomeScreen.swift */; };
-		3676B7562B265A5900FEC208 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B7552B265A5900FEC208 /* LoginScreen.swift */; };
 		3676B7592B26607500FEC208 /* TeslaWebLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B7582B26607500FEC208 /* TeslaWebLogin.swift */; };
 		3676B7662B2665C100FEC208 /* TeslaSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3676B7652B2665C100FEC208 /* TeslaSwift */; };
 		3676B76A2B26985200FEC208 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B7692B26985200FEC208 /* SettingsView.swift */; };
+		3676B76F2B26D0AE00FEC208 /* VehicleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3676B76E2B26D0AE00FEC208 /* VehicleRow.swift */; };
+		3676B7732B26D39700FEC208 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 3676B7722B26D39700FEC208 /* KeychainAccess */; };
 		3678F8482B16404A009A2E1D /* teslasyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678F8472B16404A009A2E1D /* teslasyncApp.swift */; };
 		3678F84A2B16404A009A2E1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678F8492B16404A009A2E1D /* ContentView.swift */; };
 		3678F84C2B16404C009A2E1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3678F84B2B16404C009A2E1D /* Assets.xcassets */; };
@@ -20,6 +21,9 @@
 		3678F8592B16404C009A2E1D /* teslasyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678F8582B16404C009A2E1D /* teslasyncTests.swift */; };
 		3678F8632B16404C009A2E1D /* teslasyncUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678F8622B16404C009A2E1D /* teslasyncUITests.swift */; };
 		3678F8652B16404C009A2E1D /* teslasyncUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3678F8642B16404C009A2E1D /* teslasyncUITestsLaunchTests.swift */; };
+		36AF69572B2E4F82005B1CD6 /* VehicleTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AF69562B2E4F82005B1CD6 /* VehicleTabView.swift */; };
+		36AF69592B2E4FC1005B1CD6 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AF69582B2E4FC1005B1CD6 /* ControlsView.swift */; };
+		36AF695B2B2E4FF3005B1CD6 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AF695A2B2E4FF3005B1CD6 /* ScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +46,9 @@
 /* Begin PBXFileReference section */
 		3676B74F2B2659BC00FEC208 /* UserStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateViewModel.swift; sourceTree = "<group>"; };
 		3676B7532B265A2200FEC208 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		3676B7552B265A5900FEC208 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		3676B7582B26607500FEC208 /* TeslaWebLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeslaWebLogin.swift; sourceTree = "<group>"; };
 		3676B7692B26985200FEC208 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3676B76E2B26D0AE00FEC208 /* VehicleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRow.swift; sourceTree = "<group>"; };
 		3678F8442B16404A009A2E1D /* teslasync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teslasync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3678F8472B16404A009A2E1D /* teslasyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teslasyncApp.swift; sourceTree = "<group>"; };
 		3678F8492B16404A009A2E1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,9 @@
 		3678F85E2B16404C009A2E1D /* teslasyncUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = teslasyncUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3678F8622B16404C009A2E1D /* teslasyncUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teslasyncUITests.swift; sourceTree = "<group>"; };
 		3678F8642B16404C009A2E1D /* teslasyncUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teslasyncUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36AF69562B2E4F82005B1CD6 /* VehicleTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTabView.swift; sourceTree = "<group>"; };
+		36AF69582B2E4FC1005B1CD6 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		36AF695A2B2E4FF3005B1CD6 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3676B7732B26D39700FEC208 /* KeychainAccess in Frameworks */,
 				3676B7662B2665C100FEC208 /* TeslaSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +91,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3676B76B2B26D05400FEC208 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3676B76D2B26D08700FEC208 /* SubViews */,
+				3676B76C2B26D06100FEC208 /* MainViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3676B76C2B26D06100FEC208 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				3676B7582B26607500FEC208 /* TeslaWebLogin.swift */,
+				3678F8492B16404A009A2E1D /* ContentView.swift */,
+				3676B7532B265A2200FEC208 /* HomeScreen.swift */,
+				3676B7692B26985200FEC208 /* SettingsView.swift */,
+				36AF69562B2E4F82005B1CD6 /* VehicleTabView.swift */,
+				36AF69582B2E4FC1005B1CD6 /* ControlsView.swift */,
+				36AF695A2B2E4FF3005B1CD6 /* ScheduleView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		3676B76D2B26D08700FEC208 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				3676B76E2B26D0AE00FEC208 /* VehicleRow.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		3676B7702B26D2B100FEC208 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3676B74F2B2659BC00FEC208 /* UserStateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		3678F83B2B16404A009A2E1D = {
 			isa = PBXGroup;
 			children = (
@@ -106,15 +153,11 @@
 		3678F8462B16404A009A2E1D /* teslasync */ = {
 			isa = PBXGroup;
 			children = (
-				3676B74F2B2659BC00FEC208 /* UserStateViewModel.swift */,
+				3676B7702B26D2B100FEC208 /* ViewModels */,
+				3676B76B2B26D05400FEC208 /* Views */,
 				3678F8472B16404A009A2E1D /* teslasyncApp.swift */,
-				3678F8492B16404A009A2E1D /* ContentView.swift */,
-				3676B7532B265A2200FEC208 /* HomeScreen.swift */,
 				3678F84B2B16404C009A2E1D /* Assets.xcassets */,
 				3678F84D2B16404C009A2E1D /* Preview Content */,
-				3676B7552B265A5900FEC208 /* LoginScreen.swift */,
-				3676B7582B26607500FEC208 /* TeslaWebLogin.swift */,
-				3676B7692B26985200FEC208 /* SettingsView.swift */,
 			);
 			path = teslasync;
 			sourceTree = "<group>";
@@ -162,6 +205,7 @@
 			name = teslasync;
 			packageProductDependencies = (
 				3676B7652B2665C100FEC208 /* TeslaSwift */,
+				3676B7722B26D39700FEC208 /* KeychainAccess */,
 			);
 			productName = teslasync;
 			productReference = 3678F8442B16404A009A2E1D /* teslasync.app */;
@@ -237,6 +281,7 @@
 			mainGroup = 3678F83B2B16404A009A2E1D;
 			packageReferences = (
 				3676B7642B2665C100FEC208 /* XCRemoteSwiftPackageReference "TeslaSwift" */,
+				3676B7712B26D39700FEC208 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 3678F8452B16404A009A2E1D /* Products */;
 			projectDirPath = "";
@@ -281,12 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3676B76A2B26985200FEC208 /* SettingsView.swift in Sources */,
+				36AF69592B2E4FC1005B1CD6 /* ControlsView.swift in Sources */,
 				3676B7592B26607500FEC208 /* TeslaWebLogin.swift in Sources */,
+				36AF69572B2E4F82005B1CD6 /* VehicleTabView.swift in Sources */,
 				3676B7502B2659BC00FEC208 /* UserStateViewModel.swift in Sources */,
+				36AF695B2B2E4FF3005B1CD6 /* ScheduleView.swift in Sources */,
+				3676B76F2B26D0AE00FEC208 /* VehicleRow.swift in Sources */,
 				3676B7542B265A2200FEC208 /* HomeScreen.swift in Sources */,
 				3678F84A2B16404A009A2E1D /* ContentView.swift in Sources */,
 				3678F8482B16404A009A2E1D /* teslasyncApp.swift in Sources */,
-				3676B7562B265A5900FEC208 /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"teslasync/Preview Content\"";
+				DEVELOPMENT_TEAM = ZH8B3J7N69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,6 +527,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"teslasync/Preview Content\"";
+				DEVELOPMENT_TEAM = ZH8B3J7N69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -620,6 +670,14 @@
 				minimumVersion = 9.1.0;
 			};
 		};
+		3676B7712B26D39700FEC208 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -627,6 +685,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3676B7642B2665C100FEC208 /* XCRemoteSwiftPackageReference "TeslaSwift" */;
 			productName = TeslaSwift;
+		};
+		3676B7722B26D39700FEC208 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3676B7712B26D39700FEC208 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

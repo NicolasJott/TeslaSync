@@ -6,13 +6,36 @@
 //
 
 import SwiftUI
+import TeslaSwift
 
 struct VehicleRow: View {
+    var vehicle: Vehicle
+    @EnvironmentObject var vm: UserStateViewModel
+    var tapAction: () -> Void
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading){
+                Text(vehicle.displayName ?? "unknown vehicle")
+                    .font(.headline)
+                Spacer()
+                Text(vehicle.vin ?? "No Color Found")
+                    .font(.subheadline)
+                    .foregroundStyle(Color(.systemGray))
+                   
+            }
+            Spacer()
+            if let currentVehicleId = vm.currentVehicle?.id, let vehicleId = vehicle.id {
+                Image(systemName: currentVehicleId == vehicleId ? "checkmark.circle" : "circle")
+            }
+            
+        }
+        .onTapGesture {
+            self.tapAction()
+        }
+        
+        .padding(EdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6))
     }
+    
 }
 
-#Preview {
-    VehicleRow()
-}

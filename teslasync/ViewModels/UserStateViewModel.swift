@@ -21,18 +21,24 @@ let teslaAPI = TeslaAPI.fleetAPI(region: .northAmericaAsiaPacific, clientID: cli
 class UserStateViewModel: ObservableObject {
     
     @Published var vehicles: [Vehicle] = []
+    @Published var currentVehicle: Vehicle? 
     @Published var isAuthenticated = false
     @Published var isBusy = false
     let api: TeslaSwift
     init() {
             api = TeslaSwift(teslaAPI: teslaAPI)
+        api.debuggingEnabled = true
         }
     
     func fetchVehicles() {
         Task {
             do {
                 let fetchedVehicles = try await api.getVehicles()
+                print(fetchedVehicles.jsonString)
                 vehicles = fetchedVehicles
+                currentVehicle = fetchedVehicles[0]
+                
+            
                 
             } catch let error {
                 print("Failed to fetch vehicles:", error)
@@ -48,6 +54,7 @@ class UserStateViewModel: ObservableObject {
             api.logout()
             isAuthenticated = false
             isBusy = false
+            UserDefaults.standard.removeObject(forKey: "tesla.token")
             return .success(true)
         }
     }
